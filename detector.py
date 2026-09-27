@@ -4,6 +4,9 @@ Dark Pattern Detector
 Scans interface elements and copy text for user manipulation / trap design.
 """
 import json
+# _veritas_block: outputs of this script are SYNTHETIC TEMPLATES until live data sources are wired.
+# Status per LEGION-VERITAS policy: SCAFFOLD. See VERITAS.md.
+
 
 def analyze_ux(text_content: str) -> dict:
     has_urgency = "only 2 left" in text_content.lower() or "expires in" in text_content.lower()
